@@ -9,14 +9,14 @@ name: release
 
 jobs:
 
-  aur-publish:
+  aur-release:
     runs-on: ubuntu-latest
     steps:
       - name: Check out codebase.
         uses: actions/checkout@v2
 
-      - name: Publish AUR package
-        uses: KSXGitHub/github-actions-deploy-aur@v2.2.3
+      - name: Release AUR package
+        uses: jbouter/aur-release@v0.0.2
         with:
           pkgname: salt-lint
           pkgbuild: ./PKGBUILD
