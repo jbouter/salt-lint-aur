@@ -6,12 +6,12 @@ export PIP_DISABLE_PIP_VERSION_CHECK=true
 pkgname=salt-lint
 epoch=
 pkgver=0.8.0
-pkgrel=1
+pkgrel=2
 pkgdesc='A command-line utility that checks for best practices in SaltStack.'
 arch=(any)
 url=https://github.com/warpnet/salt-lint
 license=(MIT)
-depends=(python python-six python-pyaml python-pathspec)
+depends=(python python-pyaml python-pathspec)
 ## EXTRA_DEPENDS ##
 makedepends=(python-pip python-distro python-wheel)
 checkdepends=()
