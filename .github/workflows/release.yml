@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Release AUR package
-        uses: jbouter/aur-releaser@v0.0.7
+        uses: jbouter/aur-releaser@v0.0.9
         with:
           pkgname: salt-lint
           pkgbuild: ./PKGBUILD
